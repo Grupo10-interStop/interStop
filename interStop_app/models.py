@@ -19,7 +19,7 @@ class Usuario(models.Model):
 
 class Problema(models.Model):
     descripcion=models.CharField(max_length=100)
-    sector=models.CharField(max_length=20)
+    sector=models.CharField(max_length=30)
     fecha=models.DateField()
     ubicacion=models.ForeignKey(Ubicacion, on_delete=models.CASCADE,default=None)
     usuario=models.ForeignKey(Usuario, on_delete=models.CASCADE,default=None)
