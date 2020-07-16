@@ -19,12 +19,16 @@ from django.urls import path
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 #interStop_app
 from interStop_app import views
+#caso de uso modificar
+from Modificar.views import form_mod
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('test/', views.test),
     path('modelo/', views.modelo),
     path('formulario/', views.formulario),
+    path('modificar/',form_mod )
 ]
 
 urlpatterns += staticfiles_urlpatterns()
