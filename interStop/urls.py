@@ -25,6 +25,8 @@ urlpatterns = [
     path('test/', views.test),
     path('modelo/', views.modelo),
     path('formulario/', views.formulario),
+    path('formulario/formulario', views.formulario),
+    path('formulario/enviar/', views.enviar),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
