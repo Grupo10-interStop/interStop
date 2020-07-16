@@ -8,7 +8,7 @@
 
 <div class="row">
     <div class="col-lg-8 mx-auto">
-        <form action="enviar" method="GET"> <!--{% csrf_token %}-->
+        <form action="/formulario/inicio" method="GET"> <!--{% csrf_token %}-->
             <!--Lista departamentos-->
             <label for="departementos">Selecione el Departamento:</label>
             <select id="departamentos" name="deps">
@@ -22,9 +22,8 @@
             <label for="municipios">Selecione el Municipio:</label>
             <select id="municipios" name="muni">
                 {% for municipio in municipios%}
-                    {% if departamento.id == municipio.id%}
+
                     <option value={{municipio.id}}>{{municipio.nombre_muni}}</option>
-                    {% endif %}
                 {% endfor %}
             </select>
             <p>                    
