@@ -8,19 +8,21 @@
 
 <form action="/iniciar/" method="GET">
     
-   <p>Agregar un problema:    <input type="text" name="problema_nuevo"> <input type="submit" value="Agregar"> </p>
-   <p>Eliminar un problema: 
-       <select name="OS">
+   <p>  <input type="submit" value="Modificar Encuesta">&nbsp &nbsp &nbsp &nbsp <input type="submit" value="Ingresar datos rápido">&nbsp &nbsp &nbsp &nbsp<input type="submit" value="Inicio"></p>
+   <div> <p></p></div>
+     
+   <p>Departamento: 
+       &nbsp &nbsp &nbsp<select name="OS">
        <option value="1">Windows Vista</option> 
        </select>
-       <input type="submit" value="Eliminar">
+       &nbsp &nbsp &nbsp<input type="submit" value="Eliminar información">
    </p>
-   <p>Agregar un sector en el que afecta:    <input type="text" name="sector_nuevo"> <input type="submit" name="agregarsector" value="Agregar"> </p>
-   <p>Eliminar un sector en el que afecta: 
-       <select name="OS">
+   <p></p> 
+   <p>Municipio: 
+      &nbsp &nbsp &nbsp<select name="OS">
        <option value="1">Windows Vista</option> 
        </select>
-       <input type="submit"  value="Eliminar">
+       &nbsp &nbsp &nbsp<input type="submit"  value="Eliminar">
   
  </form>
     {% endblock %}
