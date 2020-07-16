@@ -18,8 +18,9 @@ from django.urls import path
 #Para 
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 #interStop_app
-from inicio_app import views
+from inicio_app.views import iniciar
 from interStop_app import views
+from administrar_app.views import administrar
 
 
 urlpatterns = [
@@ -27,7 +28,8 @@ urlpatterns = [
     path('test/', views.test),
     path('modelo/', views.modelo),
     path('formulario/', views.formulario),
-    path('inicio/', views.iniciar)
+    path('inicio/',iniciar),
+    path('administrar/', administrar),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

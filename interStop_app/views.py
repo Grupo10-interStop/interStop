@@ -12,7 +12,6 @@ def modelo(request):
 def formulario(request):
     return render(request, "formulario.html")
 
-def iniciar(request):
-    
-    return render(request, "inicio.html")
+
+
 
