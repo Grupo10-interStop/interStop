@@ -29,6 +29,8 @@ urlpatterns = [
     path('formulario/enviar/', views.enviar),
     path('', views.inicio),
     path('formulario/inicio', views.inicioFormulario),
+    path('administrar/formulario', views.Formulario_admin),
+    path('formulario_inicio_admin', views.inicio_Formulario_admin),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
