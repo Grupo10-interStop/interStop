@@ -72,7 +72,7 @@ def inicioFormulario(request):
         return render(request, "inicio.html")
 
 def inicio(request):
-
+        
         return render(request, "inicio.html")
 
 def Formulario_admin(request):
