@@ -19,7 +19,7 @@ class ProblemaDes(models.Model):
     id_problema=models.CharField(primary_key=True,max_length=3)
     problema_nombre=models.CharField(max_length=50)
     def __str__(self):
-        return self.nombre_muni
+        return self.problema_nombre
 
 class Sector_afectado(models.Model):
     id_sector=models.CharField(primary_key=True,max_length=3)
