@@ -28,8 +28,17 @@ urlpatterns = [
     path('test/', views.test),
     path('modelo/', views.modelo),
     path('formulario/', views.formulario),
+<<<<<<< HEAD
     path('inicio/',iniciar),
     path('administrar/', administrar),
+=======
+    path('formulario/formulario', views.formulario),
+    path('formulario/enviar/', views.enviar),
+    path('', views.inicio),
+    path('formulario/inicio', views.inicioFormulario),
+    path('administrar/formulario', views.Formulario_admin),
+    path('formulario_inicio_admin', views.inicio_Formulario_admin),
+>>>>>>> master
 ]
 
 urlpatterns += staticfiles_urlpatterns()
