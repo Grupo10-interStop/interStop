@@ -8,6 +8,7 @@ class Departamento(models.Model):
 class Municipio(models.Model):
     nombre_muni=models.CharField(max_length=30)
     departamento=models.ForeignKey(Departamento,on_delete=models.CASCADE, default=None)
+    
 
 class Ubicacion(models.Model):
     id_ubicacion=models.CharField(primary_key=True,max_length=5)
